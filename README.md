@@ -4,7 +4,7 @@ apt-get update -y && apt-get upgrade -y && apt-get install build-essential libss
 
 ► <b>STEP 2 : CLONE INSTALLATION SCRIPT FROM GIT HUB</b>
 
-git clone 
+git clone https://github.com/bitmoneygroup/mn-install-scrypt.git
 
 ► <b>STEP 3 : ENTER INTO FOLDER CLONED FROM GITHUB</b>
 
