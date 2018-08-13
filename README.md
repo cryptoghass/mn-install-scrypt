@@ -1,5 +1,5 @@
 ![bitmoney](bitmoney.gif)
-![bitmoney](bitmoney2.gif)
+
 <b>► STEP 1 : CREATE SWAP FILE AND ALLOWING PORT 7070 ON FIREWALL [Copy paste below code as it is and hit enter]</b>
 
 dd if=/dev/zero of=/mnt/myswap.swap bs=1M count=4000 && mkswap /mnt/myswap.swap && chmod 0600 /mnt/myswap.swap && swapon /mnt/myswap.swap && ufw allow 22/tcp && ufw limit 22/tcp && ufw allow 7070/tcp && ufw logging on && ufw --force enable
@@ -41,5 +41,8 @@ After clicking on START ALL OR START MISSING , If you get error like "INVALID IP
 ► Write there the following command 
 
 startmasternode alias false "YOUR-ALIAS-HERE"
+
+
+![bitmoney](bitmoney2.gif)
 
 <b> BTC DONATION ADDRESS : 1MgexxQu5wxtL2RatwmHFx61R4tgiZPjCh</b>
