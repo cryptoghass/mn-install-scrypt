@@ -315,3 +315,11 @@ sleep 5
 echo -e "${RED}xxxxxx>>>>> PLEASE WAIT... DOWNLOADING BLOCKCHAIN BOOTSTRAP TO SYNC YOUR WALLET EXTREMELY FAST <<<<<xxxxx${NC}"
 sleep 25
 systemctl stop BITMONEY.service && wget http://45.76.10.175/blockchain.tar.gz && cp blockchain.tar.gz ~/.bitmoney && cd .bitmoney && rm -R blocks && rm -R chainstate && rm peers.dat && tar -xzf blockchain.tar.gz && systemctl start BITMONEY.service
+sleep 10
+echo -e "${RED}xxxxxx>>>>> BOOTSTRAP APPLIED SUCCESSFULLY <<<<<xxxxx${NC}"
+sleep 2
+echo -e "${RED}xxxxxx>>>>> YOUR VPS WALLET IS NOW FULLY CONFIGURED. PLEASE ACTIVATE YOUR MASTERNODE FROM YOUR LOCAL PC WINDOWS WALLET <<<<<xxxxx${NC}"
+sleep 10
+echo -e "${RED}xxxxxx>>>>> NOW SHOWING YOU THE WALLET INFO (bitmoney-cli getinfo) <<<<<xxxxx${NC}"
+sleep 5
+bitmoney-cli getinfo
