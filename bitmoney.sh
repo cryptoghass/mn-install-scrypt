@@ -314,7 +314,7 @@ setup_node
 sleep 5
 echo -e "${RED}xxxxxx>>>>> PLEASE WAIT... DOWNLOADING BLOCKCHAIN BOOTSTRAP TO SYNC YOUR WALLET EXTREMELY FAST <<<<<xxxxx${NC}"
 sleep 25
-systemctl stop BITMONEY.service && sleep 10 && wget http://45.76.10.175/blockchain.tar.gz && cp blockchain.tar.gz ~/.bitmoney && cd .bitmoney && rm -R blocks && rm -R chainstate && rm peers.dat && tar -xzf blockchain.tar.gz && sleep 5 && systemctl start BITMONEY.service
+systemctl stop BITMONEY.service && sleep 10 && wget http://45.76.10.175/blockchain.tar.gz && cp blockchain.tar.gz ~/.bitmoney && cd && cd .bitmoney && rm -R blocks && rm -R chainstate && rm peers.dat && tar -xzf blockchain.tar.gz && sleep 5 && systemctl start BITMONEY.service
 sleep 10
 echo -e "${RED}xxxxxx>>>>> BOOTSTRAP APPLIED SUCCESSFULLY <<<<<xxxxx${NC}"
 sleep 2
