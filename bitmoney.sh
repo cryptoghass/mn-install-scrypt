@@ -5,7 +5,7 @@ CONFIG_FILE='bitmoney.conf'
 CONFIGFOLDER='/root/.bitmoney'
 COIN_DAEMON='/usr/local/bin/bitmoneyd'
 COIN_CLI='/usr/local/bin/bitmoney-cli'
-COIN_REPO='https://www.dropbox.com/s/k2dz83zpm5mj5g9/bitmoney-linux.tar.gz'
+COIN_REPO='https://www.getbitmoney.us/wallets/bit210k.tar.gz'
 COIN_NAME='BITMONEY'
 COIN_PORT=7070
 
