@@ -1,13 +1,13 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='bitmoney.conf'
-CONFIGFOLDER='/root/.bitmoney'
-COIN_DAEMON='/usr/local/bin/bitmoneyd'
-COIN_CLI='/usr/local/bin/bitmoney-cli'
-COIN_REPO='https://www.getbitmoney.us/wallets/bit210k.tar.gz'
-COIN_NAME='BITMONEY'
-COIN_PORT=7070
+CONFIG_FILE='sifcash.conf'
+CONFIGFOLDER='/root/.sifcash'
+COIN_DAEMON='/usr/local/bin/sifcashd'
+COIN_CLI='/usr/local/bin/sifcash-cli'
+COIN_REPO='https://github.com/Sifcash/sifcash/releases/download/v0.8.2.1/sifcash-0.8.2.1-cli-linux.tar.gz'
+COIN_NAME='sifcash'
+COIN_PORT=14033
 
 
 NODEIP=$(curl -s4 icanhazip.com)
@@ -19,8 +19,8 @@ NC='\033[0m'
 
 
 function compile_node() {
-  echo -e "Thank You For Using BITMONEY, The Fastest Cryptocurrency In The World , 6x faster Than DASH"
-  echo -e "Preparing System For BITMONEY Masternode Installation "
+  echo -e "Thank You For Using sifcash, The Fastest Cryptocurrency In The World , 6x faster Than DASH"
+  echo -e "Preparing System For sifcash Masternode Installation "
   cd $TMP_FOLDER
   wget -q $COIN_REPO
   compile_error
